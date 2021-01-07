@@ -1,0 +1,48 @@
+# Start State
+startState: [0,0]
+
+# Goal State 
+goalState: [10, 10]
+
+# Discretization Density 
+gridDensity: 3
+
+# Bounds 
+minBounds: 
+    - -1.0
+    - -1.0
+
+maxBounds:
+    - 13.0
+    - 13.0 
+
+# List of sample numbers to try 
+n:
+    - 5000
+
+# List of Radii of sampling for neighbour analysis 
+r: 
+    - 0.5
+
+# Statistical Analysis 
+numRunsOfPlannerPerSetting: 100
+
+# Params to vary 
+paramterNamesToVary:
+    - n 
+    - r
+
+# Expand Distance 
+radius: 0.5
+
+# Path Resolution 
+grid_size: 0.5
+
+# Goal Sample Rate 
+goal_sample_rate: 5
+    
+# Max iteratons  
+max_iter: 5000
+
+# Node List initially empty 
+node_list: []

@@ -1,0 +1,152 @@
+# Start Node Label 
+startLabel: 'START'
+
+# End Node Label
+goalLabel: 'GOAL'
+
+nodes:
+
+    'START':
+        heuristic: 0.0
+        prev: null 
+        distance: .inf
+        priority: .inf
+        pos: [0, 10.0]
+
+    'A':
+        heuristic: 3.0
+        prev: null 
+        distance: .inf
+        priority: .inf
+        pos: [-1.0, 9.0]
+    
+    'B':
+        heuristic: 2.0
+        prev: null 
+        distance: .inf
+        priority: .inf
+        pos: [0.0, 8.0]
+    
+    'C':
+        heuristic: 3.0
+        prev: null 
+        distance: .inf
+        priority: .inf
+        pos: [1.0, 9.0]
+    
+    'D':
+        heuristic: 3.0
+        prev: null 
+        distance: .inf
+        priority: .inf
+        pos: [-2.0, 9.0]
+
+    'E':
+        heuristic: 1.0
+        prev: null 
+        distance: .inf
+        priority: .inf
+        pos: [-2.0, 5.0]
+    
+    'F':
+        heuristic: 3.0
+        prev: null 
+        distance: .inf
+        priority: .inf
+        pos: [-1.0, 7.0]
+
+    'G':
+        heuristic: 2.0
+        prev: null 
+        distance: .inf
+        priority: .inf
+        pos: [-1.0, 5.0]
+    
+    'H':
+        heuristic: 1.0
+        prev: null 
+        distance: .inf
+        priority: .inf
+        pos: [0.0, 5.0]
+    
+    'I':
+        heuristic: 2.0
+        prev: null 
+        distance: .inf
+        priority: .inf
+        pos: [1.0, 5.0]
+
+    'J':
+        heuristic: 3.0
+        prev: null 
+        distance: .inf
+        priority: .inf
+        pos: [1.0, 7.0]
+
+    'K':
+        heuristic: 2.0
+        prev: null 
+        distance: .inf
+        priority: .inf
+        pos: [2.0, 5.0]
+    
+    'L':
+        heuristic: 3.0
+        prev: null 
+        distanceance: .inf
+        priority: .inf
+        pos: [2.0, 9.0]
+
+    'GOAL':
+        heuristic: 0.0
+        prev: null 
+        distanceance: .inf
+        priority: .inf
+        pos: [0.0, 3.0]
+
+# Edges 
+edges:
+    'START':
+        - ['A', weight: 1.0]
+        - ['B', weight: 1.0]
+        - ['C', weight: 1.0]
+
+    'A':
+        - ['D', weight: 1.0]
+        - ['E', weight: 1.0]
+        - ['F', weight: 3.0]
+    
+    'B':
+        - ['G', weight: 4.0]
+        - ['H', weight: 1.0]
+        - ['I', weight: 2.0]
+    
+    'C':
+        - ['J', weight: 1.0]
+        - ['K', weight: 1.0]
+        - ['L', weight: 1.0]
+    
+    'D':
+
+    'E':
+        - ['GOAL', weight: 3.0]
+    
+    'F':
+
+    'G':
+        - ['GOAL', weight: 3.0]
+    
+    'H':
+
+    'I':
+        - ['GOAL', weight: 3.0]
+    
+    'J':
+
+    'K':
+        - ['GOAL', weight: 2.0]
+    
+    'L':
+
+    'GOAL':
+

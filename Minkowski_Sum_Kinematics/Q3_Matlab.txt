@@ -1,0 +1,81 @@
+>> syms alpha
+>> syms beta
+>> syms gamma
+>> 
+>> RzGamma = [ cos(gamma) -sin(gamma) 0; sin(gamma) cos(gamma) 0; 0 0 1]
+ 
+RzGamma =
+ 
+[cos(gamma), -sin(gamma), 0]
+[sin(gamma),  cos(gamma), 0]
+[         0,           0, 1]
+ 
+>> RyBeta = [ cos(beta) 0 sin(beta); 0 1 0; -sin(beta) 0 cos(beta)]
+ 
+RyBeta =
+ 
+[ cos(beta), 0, sin(beta)]
+[         0, 1,         0]
+[-sin(beta), 0, cos(beta)]
+ 
+>> RzAlpha = [ cos(alpha) -sin(alpha) 0; sin(alpha) cos(alpha) 0; 0 0 1]
+ 
+RzAlpha =
+ 
+[cos(alpha), -sin(alpha), 0]
+[sin(alpha),  cos(alpha), 0]
+[         0,           0, 1]
+ 
+>> RyBeta*RzAlpha
+ 
+ans =
+ 
+[ cos(alpha)*cos(beta), -cos(beta)*sin(alpha), sin(beta)]
+[           sin(alpha),            cos(alpha),         0]
+[-cos(alpha)*sin(beta),  sin(alpha)*sin(beta), cos(beta)]
+ 
+>> RzGamma*RyBeta*RzAlpha
+ 
+ans =
+ 
+[cos(alpha)*cos(beta)*cos(gamma) - sin(alpha)*sin(gamma), - cos(alpha)*sin(gamma) - cos(beta)*cos(gamma)*sin(alpha), cos(gamma)*sin(beta)]
+[cos(gamma)*sin(alpha) + cos(alpha)*cos(beta)*sin(gamma),   cos(alpha)*cos(gamma) - cos(beta)*sin(alpha)*sin(gamma), sin(beta)*sin(gamma)]
+[                                  -cos(alpha)*sin(beta),                                      sin(alpha)*sin(beta),            cos(beta)]
+ 
+>> 
+>> 
+>> 
+>> 
+>> RzGamma_ = [ cos(gamma - pi) -sin(gamma - pi ) 0; sin(gamma -pi ) cos(gamma - pi) 0; 0 0 1]
+ 
+RzGamma_ =
+ 
+[-cos(gamma),  sin(gamma), 0]
+[-sin(gamma), -cos(gamma), 0]
+[          0,           0, 1]
+ 
+>> RyBeta_ = [ cos(-beta) 0 sin(-beta); 0 1 0; -sin(-beta) 0 cos(-beta)]
+ 
+RyBeta_ =
+ 
+[cos(beta), 0, -sin(beta)]
+[        0, 1,          0]
+[sin(beta), 0,  cos(beta)]
+ 
+>> RzAlpha_ = [ cos(alpha -pi ) -sin(alpha - pi) 0; sin(alpha - pi) cos(alpha - pi) 0; 0 0 1]
+ 
+RzAlpha_ =
+ 
+[-cos(alpha),  sin(alpha), 0]
+[-sin(alpha), -cos(alpha), 0]
+[          0,           0, 1]
+ 
+>> RyBeta_*RzAlpha_
+ 
+ans =
+ 
+[-cos(alpha)*cos(beta), cos(beta)*sin(alpha), -sin(beta)]
+[          -sin(alpha),          -cos(alpha),          0]
+[-cos(alpha)*sin(beta), sin(alpha)*sin(beta),  cos(beta)]
+ 
+>> 

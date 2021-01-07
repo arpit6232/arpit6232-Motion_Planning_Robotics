@@ -1,0 +1,39 @@
+
+# Start State
+startState: [0,0]
+
+# Goal State 
+goalState: [10, 0]
+
+# Discretization Density 
+gridDensity: 3
+
+# Bounds 
+minBounds: 
+    - -1.0
+    - -3.0
+
+maxBounds:
+    - 11.0
+    - 3.0 
+
+# List of sample numbers to try 
+n:
+    - 500
+
+# List of Radii of sampling for neighbour analysis 
+r: 
+    - 2.0
+
+# Smoothing 
+smoothing: 
+    - True 
+
+# Statistical Analysis 
+numRunsOfPlannerPerSetting: 1
+
+# Params to vary 
+paramterNamesToVary:
+    - n 
+    - r 
+    - smoothing
